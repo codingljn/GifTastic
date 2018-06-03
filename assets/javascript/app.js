@@ -35,7 +35,7 @@ $(".display").empty();
 // Capture the artist/topic name from the data-attribute
     var artist = $(this).attr("data-name")
 // Construct URL
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=music+" + artist + "&limit=10&api_key=RIHb6WWJxG6XKWQggtH1v1KuC2pWqr5V";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=music+" + artist + "&limit=10&api_key=RIHb6WWJxG6XKWQggtH1v1KuC2pWqr5V";
 // Pull data using AJAX
     $.ajax({
     url: queryURL, 
