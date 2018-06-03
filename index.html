@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Greatest Artists & Bands of All Time</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add references to css & bootstrap -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+   
+</head>
+<body>
+
+    <div class="container">
+        <h1>Greatest Artists/Bands of All Time</h1> 
+    <!-- Area for artist/band buttons-->
+        <div class = "row" id = "buttons"></div>
+    <!-- Area for GIFS-->
+        <div class = "row" id = "GIFS">
+            <div class = "col-lg-9">
+                <div class = "display"></div>
+            </div>
+    <!--Area to add more buttons-->
+            <div class = "col-lg-3">
+        <!--Snippet (lines 24-29) taken from log-movie-name in-class activity-->
+                <form id="artist-form">
+                    <label for="artist-input">Add Your Favorite Artist/Band</label>
+                    <input type="text" id="artist-input"><br>                    
+        <!-- Button triggers new artists to be added -->
+                    <input id="add-artist" type="submit" value="Add Artist/Band">
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <br>
+    <!--logo according to API terms-->
+    <footer><img src='assets/images/PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif' id='giphyLogo'></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>

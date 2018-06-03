@@ -1,0 +1,32 @@
+body {
+    background-image: url("../images/music.jpg"); 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+.artist {
+    background-color: red;
+    color: white;
+    font-weight: 600;
+}
+
+#add-artist {
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+}
+
+p {
+    color: red;
+    font-weight: 700;
+    margin: 5px 0px 5px 0px;
+   
+}
+
+img {
+    margin: 0px 7px 0px 7px;
+    max-height: 200x;
+    }
