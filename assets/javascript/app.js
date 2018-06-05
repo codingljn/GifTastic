@@ -56,7 +56,8 @@ showButtons();
 $("#add-artist").on("click", function(event){
     event.preventDefault(); // Prevents page from refreshing
 	var newArtist = $("#artist-input").val().trim();
-	artists.push(newArtist);
+    artists.push(newArtist);
+    $("#artist-input").val("")
     showButtons();
     
 });
