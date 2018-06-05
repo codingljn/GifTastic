@@ -58,7 +58,7 @@ $("#add-artist").on("click", function(event){
 	var newArtist = $("#artist-input").val().trim();
 	artists.push(newArtist);
     showButtons();
-    return false;
+    
 });
 
 // On click, show animated GIF - followed from pausing gifs activity
