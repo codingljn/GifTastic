@@ -1,5 +1,5 @@
 // Some steps in this code were modeled after the log-movie-name & dynamic elements in-class activities
-
+$(document).ready(function(){
 // Topics
 var topics = ["artists", "food" , "animals"] // The instructions requested that we include topics under this var, but it is unclear to me how to make the application change topics, so I will build the assignment on Artists only.
 
@@ -43,7 +43,7 @@ $(".display").empty();
     }).then(function(response){
 // Function for each item returned
         for (var i = 0; i < response.data.length; i++) {
-            $(".display").append("<div class='gifDisplay'><p class='title'>Rating: "+ response.data[i].rating +"</p><div class='image-container'><img class='GIF img-responsive center-block'" + "data-still='" + response.data[i].images.downsized_still.url + "'" + "data-animate='" + response.data[i].images.downsized.url + "'" + "data-state='still'" + "src='" + response.data[i].images.downsized_still.url + "'></div></div>");
+            $(".display").append("<div class=gifDisplay'><p class='title'>Rating: "+ response.data[i].rating +"</p><div class='gif-here'><img class='GIF img-responsive center-block'" + "data-still='" + response.data[i].images.downsized_still.url + "'" + "data-animate='" + response.data[i].images.downsized.url + "'" + "data-state='still'" + "src='" + response.data[i].images.downsized_still.url + "'></div></div>");
             GIFarray.push(response.data[i].images.fixed_height.url);
        }
     });
@@ -75,7 +75,7 @@ $("body").on("click", ".GIF", function(){
          $(this).attr("data-state", "still");
     };
 });  
-
+});
  
 
 
